@@ -3,9 +3,9 @@
 int Binarysearch(int a[],int n,int e)
 {
 int beg=0,end=n-1,mid=0;
-while(beg<=end)
+while(beg<end)
 {
-mid=(beg+end)/2;
+mid=beg +(end-beg)/2;
 if(a[mid]==e)
 return mid;
 else if(a[mid]<e)
